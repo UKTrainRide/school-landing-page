@@ -1,100 +1,150 @@
-<div class="min-h-screen bg-slate-50 text-slate-800 flex flex-col justify-between font-sans selection:bg-orange-200 selection:text-orange-950" dir="rtl">
-  
-  <!-- Header / Nav -->
-  <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبتي الذكية - عروض العودة للمدارس</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .playful-bg {
+            background-color: #fdfbf7;
+            background-image: radial-gradient(#fed7aa 1px, transparent 1px), radial-gradient(#bfdbfe 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+    </style>
+</head>
+<body class="playful-bg min-h-screen text-slate-800 flex flex-col justify-between overflow-x-hidden">
+
+  <div class="absolute top-20 right-[-50px] w-40 h-40 bg-amber-400/20 rounded-full blur-2xl pointer-events-none"></div>
+  <div class="absolute top-96 left-[-50px] w-52 h-52 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+  <header class="bg-white/80 backdrop-blur-md border-b border-orange-100 sticky top-0 z-50 shadow-sm">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
-        <span class="text-2xl">🎒</span>
-        <span class="text-xl font-bold bg-gradient-to-r from-orange-600 to-amber-500 bg-clip-text text-transparent">مكتبتي الذكية</span>
+        <span class="text-3xl animate-bounce">🎒</span>
+        <span class="text-2xl font-black bg-gradient-to-r from-orange-600 to-amber-500 bg-clip-text text-transparent">مكتبتي الذكية</span>
       </div>
-      <a href="#offers" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition dynamic-shadow">
-        عروض العودة للمدرسة
+      <a href="#offers" class="bg-orange-500 hover:bg-orange-600 hover:scale-105 transform transition text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-md shadow-orange-500/20">
+        عروض المدرسة ⚡
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <main class="flex-grow">
-    <section class="container mx-auto px-6 py-16 md:py-24 text-center max-w-4xl">
-      <!-- Tag / Badge -->
-      <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-orange-50 text-orange-600 border border-orange-200 mb-6">
-        ✨ خصومات تصل إلى 40% لفترة محدودة
-      </span>
+  <main class="flex-grow container mx-auto px-6 py-12 md:py-20 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
       
-      <!-- Main Headline -->
-      <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight md:leading-snug mb-6">
-        كل اللي أولادك محتاجينه للتميز الدراسي.. <br>
-        <span class="text-orange-500">في مكان واحد بجودة تشرفك!</span>
-      </h1>
-      
-      <!-- Sub-headline -->
-      <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-        جهّز أولادك للسنة الدراسية الجديدة بأجود الأدوات المدرسية والشنط الطبية المريحة. وفرنا عليك اللف والتعب بباكدجات متكاملة تناسب كل المراحل العمرية وبأسعار مش هتلاقيها في مكان تاني.
-      </p>
-
-      <!-- Main CTA Button -->
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
-        <a href="#offers" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-xl text-lg transition shadow-lg text-center">
-          تصفح الباكدجات الجاهزة
-        </a>
-        <a href="#features" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-8 py-4 rounded-xl text-lg transition text-center">
-          ليه تشتري مننا؟
-        </a>
+      <div class="text-right space-y-6 z-10">
+        <span class="inline-flex items-center gap-1.5 py-1.5 px-4 rounded-full text-xs font-bold bg-orange-100 text-orange-700 border border-orange-200 uppercase tracking-wider">
+          🎉 أقوى خصومات السنة تصل إلى 40%
+        </span>
+        <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight md:leading-snug">
+          كل اللي أولادك محتاجينه <br>
+          <span class="text-orange-500 underline decoration-amber-400 decoration-wavy">للتميز الدراسي!</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+          جهّز أولادك للسنة الدراسية الجديدة بأجود الأدوات المدرسية والشنط الطبية المريحة. وفرنا عليك اللف والتعب بباكدجات متكاملة تناسب كل المراحل الدراسية وبأسعار مش هتلاقيها في مكان تاني!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <a href="#offers" class="bg-blue-600 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-500/30 text-white font-bold px-8 py-4 rounded-2xl text-lg transition-all text-center transform hover:-translate-y-1">
+            تصفح الباكدجات الجاهزة 📚
+          </a>
+          <a href="#features" class="bg-white hover:bg-slate-50 text-slate-700 border-2 border-slate-200 font-bold px-8 py-4 rounded-2xl text-lg transition-all text-center">
+            ليه تشتري مننا؟ 🤔
+          </a>
+        </div>
       </div>
-    </section>
 
-    <!-- Features / Quick Grid Section -->
-    <section id="features" class="bg-white border-t border-b border-slate-100 py-16">
-      <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <!-- Card 1 -->
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-orange-200 transition text-right">
-            <div class="w-12 h-12 bg-orange-100 text-xl flex items-center justify-center rounded-xl mb-4">🏆</div>
+      <div class="flex justify-center items-center relative">
+        <div class="absolute w-72 h-72 bg-gradient-to-tr from-amber-400 to-orange-300 rounded-full opacity-20 blur-xl animate-pulse"></div>
+        <img src="https://illustrations.popsy.co/amber/back-to-school.svg" alt="أطفال المدارس" class="w-full max-w-md relative z-10 drop-shadow-xl transform hover:rotate-2 transition duration-300">
+      </div>
+
+    </div>
+
+    <section id="features" class="py-20 mt-12">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-extrabold text-center text-slate-900 mb-12">بنقدملك إيه في مكتبتنا؟ ✨</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="bg-white p-8 rounded-3xl border-2 border-orange-100 hover:border-orange-400 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+            <div class="w-24 h-24 bg-amber-50 rounded-2xl p-2 mb-4 group-hover:scale-110 transition duration-300">
+                <img src="https://illustrations.popsy.co/amber/pencil.svg" alt="أقلام" class="w-full h-full">
+            </div>
             <h3 class="text-xl font-bold text-slate-900 mb-2">خامات أصلية 100%</h3>
             <p class="text-slate-600 text-sm leading-relaxed">أقلام ودفاتر من براندات عالمية ومحلية معروفة تضمن لك جودة تدوم لآخر يوم في السنة.</p>
           </div>
-          <!-- Card 2 -->
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-orange-200 transition text-right">
-            <div class="w-12 h-12 bg-orange-100 text-xl flex items-center justify-center rounded-xl mb-4">🩺</div>
+
+          <div class="bg-white p-8 rounded-3xl border-2 border-blue-100 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+            <div class="w-24 h-24 bg-blue-50 rounded-2xl p-2 mb-4 group-hover:scale-110 transition duration-300">
+                <img src="https://illustrations.popsy.co/amber/school-bag.svg" alt="شنطة" class="w-full h-full">
+            </div>
             <h3 class="text-xl font-bold text-slate-900 mb-2">شنط صحية وطبية</h3>
             <p class="text-slate-600 text-sm leading-relaxed">تشكيلة واسعة من الشنط المدرسية المبطنة والمصممة خصيصاً لحماية ظهر وعمود طفلك الفقري.</p>
           </div>
-          <!-- Card 3 -->
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-orange-200 transition text-right">
-            <div class="w-12 h-12 bg-orange-100 text-xl flex items-center justify-center rounded-xl mb-4">⚡</div>
+
+          <div class="bg-white p-8 rounded-3xl border-2 border-emerald-100 hover:border-emerald-400 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+            <div class="w-24 h-24 bg-emerald-50 rounded-2xl p-2 mb-4 group-hover:scale-110 transition duration-300">
+                <img src="https://illustrations.popsy.co/amber/delivery-boy.svg" alt="توصيل" class="w-full h-full">
+            </div>
             <h3 class="text-xl font-bold text-slate-900 mb-2">توصيل سريع لباب بيتك</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">اطلب انهارده واستلم حاجتك كلها متغلفة وجاهزة خلال 24 لـ 48 ساعة بالظبط.</p>
+            <p class="text-slate-600 text-sm leading-relaxed">اطلب انهارده واستلم حاجتك كلها متغلفة وجاهزة ومتأمنة خلال 24 لـ 48 ساعة بالظبط.</p>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Lead Capture Section (The Form) -->
-    <section id="offers" class="container mx-auto px-6 py-16 max-w-3xl text-center">
-      <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
-        <!-- Visual Decor -->
-        <div class="absolute -top-10 -left-10 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl"></div>
+    <section id="offers" class="max-w-4xl mx-auto my-12">
+      <div class="bg-gradient-to-br from-orange-500 to-amber-500 text-white rounded-[2rem] p-8 md:p-12 shadow-xl shadow-orange-500/20 relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+        
+        <div class="text-right space-y-4 md:w-1/2">
+          <div class="bg-white/20 inline-block px-4 py-1 rounded-full text-xs font-bold">هدية العودة للمدارس 🎁</div>
+          <h2 class="text-3xl font-black">احصل على قسيمة خصم 15% إضافية</h2>
+          <p class="text-orange-50/90 text-sm leading-relaxed">
+            سجل إيميلك أو رقمك دلوقتي وهنبعتلك كود الخصم فوراً، وهتكون أول واحد يعرف أول ما باكدجات "السبوبة المدرسية" الشاملة تتوفر.
+          </p>
+        </div>
 
-        <h2 class="text-2xl md:text-4xl font-bold mb-4">احصل على قسيمة خصم 15% إضافية</h2>
-        <p class="text-slate-300 text-sm md:text-base max-w-md mx-auto mb-8 leading-relaxed">
-          سجل إيميلك أو رقمك دلوقتي وهنبعتلك كود الخصم فوراً، بالإضافة لإشعار أول ما باكدجات "السبوبة المدرسية الشاملة" تتوفر.
-        </p>
+        <div class="bg-white p-6 rounded-2xl shadow-inner w-full md:w-1/2 text-slate-800 space-y-4">
+            <div class="flex items-center gap-2 border-2 border-dashed border-orange-300 p-2 rounded-xl bg-orange-50/50 justify-center">
+                <span class="text-2xl">🎟️</span>
+                <span class="font-mono font-bold text-orange-600 tracking-wider">SCHOOL2026</span>
+            </div>
+            <form class="space-y-3">
+              <input type="email" required placeholder="أدخل بريدك الإلكتروني هنا..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-right focus:outline-none focus:border-orange-500 transition" />
+              <button type="submit" class="w-full bg-slate-950 hover:bg-slate-800 text-white font-bold py-3 rounded-xl transition shadow-lg">
+                احصل على قسيمة الخصم 🔥
+              </button>
+            </form>
+        </div>
 
-        <!-- Form -->
-        <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
-          <input type="email" required placeholder="أدخل بريدك الإلكتروني هنا..." class="w-full bg-slate-800/80 text-white placeholder-slate-400 border border-slate-700 rounded-xl px-4 py-3.5 text-right focus:outline-none focus:border-orange-500 transition" />
-          <button type="submit" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3.5 rounded-xl whitespace-nowrap transition shadow-lg shadow-orange-500/20">
-            احصل على الخصم
-          </button>
-        </form>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t border-slate-100 py-6 text-center text-sm text-slate-500">
-    <div>© 2026 مكتبتي الذكية. صنع بكل 🧡 لدعم أبطال المستقبل.</div>
+  <footer class="bg-white border-t border-orange-100 py-6 text-center text-sm text-slate-500">
+    <div class="container mx-auto px-6">
+        © 2026 مكتبتي الذكية. صُنع بكل 🧡 لدعم أبطال وبطلات المستقبل.
+    </div>
   </footer>
 
-</div>
+</body>
+</html>
